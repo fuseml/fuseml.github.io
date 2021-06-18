@@ -1,0 +1,56 @@
+baseURL = "https://alfsuse.github.io/fuseml/"
+languageCode = "en-us"
+title = "fuseml"
+theme = "projects-theme"
+pluralizeListTitles = false
+enableRobotsTXT = true
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+enableGitInfo = false
+googleAnalytics = "UA-193012767-1"
+
+[blackfriday]
+fractions = false
+#hrefTargetBlank = true
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlaintext = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]
+
+[params]
+  github = "https://github.com/fuseml"
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
+
+[privacy]
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "docs"
+    name = "Docs"
+    url = "https://fuseml.github.io/docs"
+    weight = -110
+
+  [[menu.main]]
+    identifier = "slack"
+    name = "Slack"
+    url = "https://join.slack.com/t/fuseml/shared_invite/zt-rcs6kepe-rGrMzlj0hrRlalcahWzoWg"
+    weight = -90
+
+  [[menu.main]]
+    identifier = "youtube"
+    name = "YouTube"
+    url = "https://www.youtube.com/channel/UCQLoLTikJDDMXvywWd27FBg"
+    weight = -80
