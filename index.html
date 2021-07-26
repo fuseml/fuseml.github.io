@@ -1,7 +1,119 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.83.1"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>FuseML: Flexible Universal SErvice orchestration for Machine Learning</title><link rel=stylesheet type=text/css href=https://alfsuse.github.io/fuseml/sass/main.min.css?1624016392><link rel=alternate type=application/rss+xml href=/fuseml/index.xml title=fuseml><script async defer src=https://buttons.github.io/buttons.js></script><script type=text/javascript src=//cdn.bizible.com/scripts/bizible.js async></script></head><body><head><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-193012767-1','auto'),ga('send','pageview'))</script><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-193012767-1','auto'),ga('send','pageview'))</script><script async src=https://www.google-analytics.com/analytics.js></script></head><header><div class=sub-header><a href=https://alfsuse.github.io/fuseml/><img src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/logo-fuseml.png alt=fuseml height=200%></a>
-<a href=#main-menu id=main-menu-toggle class=menu-toggle aria-label="Open main menu"><span class=sr-only>Open main menu</span>
-<span aria-hidden=true>HAMBURGER</span></a><nav id=main-menu class=main-menu aria-label="Main menu"><a href=#main-menu-toggle id=main-menu-close class=menu-close aria-label="Close main menu"><span class=sr-only>Close main menu</span>
-<span class="fa fa-close" aria-hidden=true></span></a><h2 id=main-menu-heading class=sr-only>Main menu</h2><ul class=menu><li><a href=https://fuseml.github.io/docs class="btn no-bg">Docs</a></li><li><a href=https://join.slack.com/t/fuseml/shared_invite/zt-rcs6kepe-rGrMzlj0hrRlalcahWzoWg class="btn no-bg">Slack</a></li><li><a href=https://www.youtube.com/channel/UCQLoLTikJDDMXvywWd27FBg class="btn no-bg">YouTube</a></li><li><a href=https://github.com/fuseml class=btn><img src=https://raw.githubusercontent.com/rancherlabs/projects-theme/5e3258f90352c9558674a2cbf5148e8bc8984893/static/images/icon-github.svg><span>Github</span></a></li></ul></nav><a href=#main-menu-toggle class=backdrop tabindex=-1 aria-hidden=true hidden></a></div></header><main><div><section class=intro><div class=bg-primary><div class="wrap grid-one"><div><h1 style=color:#fff;text-align:center>FuseML</h1><h2 style=color:#fff;text-align:center>Open source orchestration for MLOps</h2></div></div></div><div class=folder><h4 style=color:#fff>Why FuseML</h4><div class="bg-light grid-three text-center"><div class=card style=width:28rem><img class=card-img-top src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/Deliver-Applications-Faster.svg alt="Card image cap" style=width:18rem><div class=card-body><h5 class=card-title>...Low-Code AI</h5><p class=card-text><b>Machine-Learning Operators need</b> focus on what matters, NOT writing infinite sets of scripts.</p><p></p><a href=https://fuseml.github.io/docs/quickstart.html class="btn btn-primary">Install</a></div></div><div class=card style=width:28rem><img class=card-img-top src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/Innovate-at-the-Edge.svg alt="Card image cap" style=width:18rem><div class=card-body><h5 class=card-title>...Automated Workflows</h5><p class=card-text><b>Machine-Learning Operators need</b> a fully automated environment that's easy to be optimized and managed.</p><p></p><a href=https://fuseml.github.io/docs/tutorials.html class="btn btn-primary">Configure</a></div></div><div class=card style=width:28rem><img class=card-img-top src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/Scale-with-Containers.svg alt="Card image cap" style=width:18rem><div class=card-body><h5 class=card-title>...Modular Architecture</h5><p class=card-text><b>Machine-Learning Operators need</b> to combine existing tools in flexible and reusable recipes.</p><p></p><a href=https://github.com/fuseml class="btn btn-primary">Deploy</a></div></div></div></div></div></section><section class=wrap><h2>Who needs FuseML?</h2><p class="text-center font-weight-light">FuseML is an MLOps orchestrator powered by a flexible framework designed for consistent operations and a rich collection of integration formulas (recipes) reflecting real world use cases that help you <strong>reduce technical debt and avoid vendor lock-in</strong>.</p><div class=grid-three><div><h4>For Machine-Learning Operators</h4><p class="text-left font-weight-light">FuseML allows you to re-use existing components and tools to create and manage the end-to-end ML lifecycle.</p><p class="text-left font-weight-light">Optimize AI workload with a low-code approach and an extensible framework.</p></div><div></div><div><h4>For AI Teams</h4><p class="text-left font-weight-light">FuseML allows the team to quickly iterate and re-use existing, well known tools for rapid experimentation and fast production releases.</p><p class="text-left font-weight-light">It's easy to experiment with end-to-end AI workflows and to integrate them into CI/CD pipelines.</p></div></div><hr><h2>How it Works</h2><img src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/2.png alt="{{ .Site.Title }}" style="padding:3em;background:#eee;border-radius:25px;margin:10px auto 20px;display:block"></section><section class=get-started><div class=white><h2 class=text-center>Get Started</h2><pre>
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.86.0">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>FuseML: Flexible Universal SErvice orchestration for Machine Learning</title>
+<link rel=stylesheet type=text/css href=https://alfsuse.github.io/fuseml/sass/main.min.css?1627285303>
+<link rel=alternate type=application/rss+xml href=/fuseml/index.xml title=fuseml>
+<script async defer src=https://buttons.github.io/buttons.js></script>
+<script type=text/javascript src=//cdn.bizible.com/scripts/bizible.js async></script>
+</head>
+<body>
+<head>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-193012767-1','auto'),ga('send','pageview'))</script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-193012767-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<header>
+<div class=sub-header>
+<a href=https://alfsuse.github.io/fuseml/>
+<img src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/logo-fuseml.png alt=fuseml height=200%>
+</a>
+<a href=#main-menu id=main-menu-toggle class=menu-toggle aria-label="Open main menu">
+<span class=sr-only>Open main menu</span>
+<span aria-hidden=true>HAMBURGER</span>
+</a>
+<nav id=main-menu class=main-menu aria-label="Main menu">
+<a href=#main-menu-toggle id=main-menu-close class=menu-close aria-label="Close main menu">
+<span class=sr-only>Close main menu</span>
+<span class="fa fa-close" aria-hidden=true></span>
+</a>
+<h2 id=main-menu-heading class=sr-only>Main menu</h2>
+<ul class=menu>
+<li><a href=https://fuseml.github.io/docs class="btn no-bg">Docs</a></li>
+<li><a href=https://join.slack.com/t/fuseml/shared_invite/zt-rcs6kepe-rGrMzlj0hrRlalcahWzoWg class="btn no-bg">Slack</a></li>
+<li><a href=https://www.youtube.com/channel/UCQLoLTikJDDMXvywWd27FBg class="btn no-bg">YouTube</a></li>
+<li><a href=https://github.com/fuseml class=btn><img src=https://raw.githubusercontent.com/rancherlabs/projects-theme/5e3258f90352c9558674a2cbf5148e8bc8984893/static/images/icon-github.svg><span>Github</span></a></li>
+</ul>
+</nav>
+<a href=#main-menu-toggle class=backdrop tabindex=-1 aria-hidden=true hidden></a>
+</div>
+</header>
+<main>
+<div>
+<section class=intro>
+<div class=bg-primary>
+<div class="wrap grid-one">
+<div>
+<img src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/logo-fuseml-transparent.png alt="{{ .Site.Title }}" style=text-align:center>
+<h1 style=color:#fff;text-align:center>FuseML</h1>
+<h2 style=color:#fff;text-align:center>Open source orchestration for MLOps</h2>
+</div>
+</div>
+</div>
+<div class=folder>
+<h4 style=color:#fff>Why FuseML</h4>
+<div class="bg-light grid-three text-center">
+<div class=card style=width:28rem>
+<img class=card-img-top src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/Deliver-Applications-Faster.svg alt="Card image cap" style=width:18rem>
+<div class=card-body>
+<h5 class=card-title>...Low-Code AI</h5>
+<p class=card-text><b>Machine-Learning Operators need</b> focus on what matters, NOT writing infinite sets of scripts.</p>
+<p></p>
+<a href=https://fuseml.github.io/docs/quickstart.html class="btn btn-primary">Install</a>
+</div>
+</div>
+<div class=card style=width:28rem>
+<img class=card-img-top src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/Innovate-at-the-Edge.svg alt="Card image cap" style=width:18rem>
+<div class=card-body>
+<h5 class=card-title>...Automated Workflows</h5>
+<p class=card-text><b>Machine-Learning Operators need</b> a fully automated environment that's easy to be optimized and managed.</p>
+<p></p>
+<a href=https://fuseml.github.io/docs/tutorials.html class="btn btn-primary">Configure</a>
+</div>
+</div>
+<div class=card style=width:28rem>
+<img class=card-img-top src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/Scale-with-Containers.svg alt="Card image cap" style=width:18rem>
+<div class=card-body>
+<h5 class=card-title>...Modular Architecture</h5>
+<p class=card-text><b>Machine-Learning Operators need</b> to combine existing tools in flexible and reusable recipes.</p>
+<p></p>
+<a href=https://github.com/fuseml class="btn btn-primary">Deploy</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=wrap>
+<h2>Who needs FuseML?</h2>
+<p class="text-center font-weight-light">FuseML is an MLOps orchestrator powered by a flexible framework designed for consistent operations and a rich collection of integration formulas (recipes) reflecting real world use cases that help you <strong>reduce technical debt and avoid vendor lock-in</strong>.
+</p>
+<div class=grid-three>
+<div>
+<h4>For Machine-Learning Operators</h4>
+<p class="text-left font-weight-light">FuseML allows you to re-use existing components and tools to create and manage the end-to-end ML lifecycle.</p>
+<p class="text-left font-weight-light">Optimize AI workload with a low-code approach and an extensible framework.
+</p>
+</div>
+<div>
+</div>
+<div>
+<h4>For AI Teams</h4>
+<p class="text-left font-weight-light">FuseML allows the team to quickly iterate and re-use existing, well known tools for rapid experimentation and fast production releases.</p>
+<p class="text-left font-weight-light">It's easy to experiment with end-to-end AI workflows and to integrate them into CI/CD pipelines.</p>
+</div>
+</div>
+<hr>
+<h2>How it Works</h2>
+<img src=https://raw.githubusercontent.com/alfsuse/fuseml/main/static/images/2.png alt="{{ .Site.Title }}" style="padding:3em;background:#eee;border-radius:25px;margin:10px auto 20px;display:block">
+</section>
+<section class=get-started>
+<div class=white>
+<h2 class=text-center>Get Started</h2>
+<pre>
       <code>
         # On Linux
         <span style=color:#30ba78>curl -sfL https://fuseml.github.io/in/installer.ps1 | sh -</span>
@@ -11,4 +123,20 @@
         <span style=color:#30ba78>https://fuseml.github.io/docs/tutorials.html</span>
         # Done!
       </code>
-    </pre></div><div class=bg-primary><div class=wrap></div></div></section></div></main><footer><p>&copy; 2021 <a href=https://alfsuse.github.io/fuseml/>fuseml</a></p><div><a href=https://suse-projects.github.io/ target=_blank>Suse Projects Directory</a></div></footer></body></html>
+    </pre>
+</div>
+<div class=bg-primary>
+<div class=wrap>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer>
+<p>&copy; 2021 <a href=https://alfsuse.github.io/fuseml/>fuseml</a></p>
+<div>
+<a href=https://suse-projects.github.io/ target=_blank>Suse Projects Directory</a>
+</div>
+</footer>
+</body>
+</html>
