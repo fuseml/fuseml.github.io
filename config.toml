@@ -38,6 +38,13 @@ home = ["HTML", "RSS", "Algolia"]
 [menu]
 
   [[menu.main]]
+    identifier = "download"
+    name = "Download"
+    url = "https://github.com/fuseml/fuseml/releases/download/v0.1.1/fuseml-installer-linux-amd64.tar.gz"
+    weight = -120
+
+
+  [[menu.main]]
     identifier = "docs"
     name = "Docs"
     url = "https://fuseml.github.io/docs"
@@ -54,3 +61,5 @@ home = ["HTML", "RSS", "Algolia"]
     name = "YouTube"
     url = "https://www.youtube.com/channel/UCQLoLTikJDDMXvywWd27FBg"
     weight = -80
+
+
